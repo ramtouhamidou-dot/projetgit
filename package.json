@@ -2,6 +2,6 @@
   "name": "projetgit",
   "version": "1.0.0",
  "scripts": {
-  "test": "echo \"Test réussi ✅\""
-}
+    "test": "node test.js"
+  }
 }
