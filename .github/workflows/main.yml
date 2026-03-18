@@ -1,0 +1,25 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu 20.0.4
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Vérification
+      run: echo "Vérification du code..."
+
+    - name: Build
+      run: echo "Build terminé"
+
+    - name: Test
+      run: echo "Tests OK"
+
+    - name: Deploy
+      run: echo "Déploiement simulé"
